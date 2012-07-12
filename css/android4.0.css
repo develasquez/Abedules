@@ -1,0 +1,163 @@
+@font-face { font-family: RobotoRegular; src: url('../font/Roboto-Regular.ttf'); } 
+
+input.ui-input-text, textarea.ui-input-text {
+border-top: none !important;
+border-left: none !important;
+border-right: none !important;
+border-bottom: 2px solid #0099CC !important;
+}
+.ui-shadow-inset {
+-moz-box-shadow: none !important;
+-webkit-box-shadow: none !important;
+box-shadow: none !important;
+}
+
+.ui-corner-all {
+-moz-border-radius: .4em !important;
+-webkit-border-radius: .4em !important;
+border-radius: .4em !important;
+}
+
+.ui-focus {
+	-moz-box-shadow: none !important;
+	-webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+.ui-body-c, .ui-dialog.ui-overlay-c {
+color: #333 !important;
+
+background-image: none !important;
+}
+
+label.ui-input-text {
+color: #0099CC !important;
+
+}
+.ui-corner-top {
+-moz-border-radius-topleft: 0 !important;
+-webkit-border-top-left-radius: 0 !important;
+border-top-left-radius: 0 !important;
+-moz-border-radius-topright: 0 !important;
+-webkit-border-top-right-radius: 0 !important;
+border-top-right-radius: 0 !important;
+
+}
+
+.ui-bar-b {
+border: 1px solid #456F9A /*{b-bar-border}*/;
+background: .ui-btn-active a.ui-link-inherit {
+color: 
+white /*{global-active-color}*/;
+};
+
+background-image: none !important;
+}
+.ui-shadow {
+-moz-box-shadow: none !important;
+-webkit-box-shadow:none !important;
+box-shadow: none !important;
+
+}
+.ui-btn-corner-all {
+-moz-border-radius: 0em !important;
+-webkit-border-radius: 0em !important;
+border-radius: 0em !important;
+}
+.ui-corner-bottom {
+-moz-border-radius-bottomleft: 0em !important;
+-webkit-border-bottom-left-radius: 0em !important;
+border-bottom-left-radius: 0em !important;
+-moz-border-radius-bottomright: 0em !important;
+-webkit-border-bottom-right-radius: 0em !important;
+border-bottom-right-radius: 0em !important;
+}
+.ui-body-c, .ui-body-c input, .ui-body-c select, .ui-body-c textarea, .ui-body-c button {
+font-family: RobotoRegular, sans-serif !important;
+}
+.ui-btn-up-c {
+border-left-color: #C1C1C1 !important;
+border-right-color: #C1C1C1 !important;
+border-top-color: #C1C1C1 !important;
+border-bottom-color: #727473 !important;
+background: #CECECE /*{c-bup-background-color}*/;
+
+background-image:none !important;
+}
+.ui-btn-hover-c {
+	border-left-color: #57aecc !important;
+border-right-color: #57aecc !important;
+border-top-color: #57aecc !important;
+border-bottom-color: #3d8da8 !important;
+	background: #45bae6 !important;
+	background-image: none !important;
+	
+}
+.ui-btn-down-c {
+border: 3px solid #a7d3e0 !important;
+
+	 
+	background: #45bae6 !important;
+	background-image: none !important;
+	-moz-border-radius: .3em !important;
+-webkit-border-radius: .3em !important;
+border-radius: .3em !important;
+}
+
+
+
+
+.ui-overlay-shadow {
+-moz-box-shadow: none !important;
+-webkit-box-shadow:none !important;
+box-shadow: none !important;
+}
+
+.ui-body-a, .ui-dialog.ui-overlay-a {
+border: 0px solid transparent !important;
+background: transparent !important;
+
+font-weight: normal;
+background-image: none !important;
+}
+.ui-btn-up-d {
+border-top: none !important;
+border-left: none !important;
+border-right: none !important;
+border-bottom: 2px solid #828282 !important;
+background: #F0F0F0 !important;
+
+background-image: none !important;
+}
+.ui-btn-hover-d {
+	border: 1px solid 		#aaa /*{d-bhover-border}*/;
+	background: #F0F0F0 !important;
+
+	font-weight: bold;
+
+	cursor: pointer;
+	text-shadow: 0 /*{d-bhover-shadow-x}*/ 1px /*{d-bhover-shadow-y}*/ 1px /*{d-bhover-shadow-radius}*/ 	#fff /*{d-bhover-shadow-color}*/;
+	background-image: none !important;	
+}
+
+.ui-btn-active a.ui-link-inherit {
+color: #0099CC;
+text-shadow:none !important;
+}
+.ui-li-desc {
+color: #BCBCBC !important;
+}
+
+.ui-select .ui-icon, .ui-icon-searchfield::after {
+background: transparent !important;
+background-image: none !important;
+-moz-border-radius: 0px !important;
+-webkit-border-radius: 0px !important;
+border-radius: 0px !important;
+width:0px;
+height:0px;
+border-top: 16px solid transparent !important;
+border-left:16px solid transparent !important;
+border-right: 16px solid #828282 !important;
+border-bottom: 16px solid #828282 !important;
+margin-right: -15px !important;
+}
