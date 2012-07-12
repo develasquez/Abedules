@@ -1,4 +1,4 @@
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
 <?
 
 
@@ -66,7 +66,7 @@ $id_grupo  = $_POST["id_grupo"];
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
+    <meta content="text/html; charset=iso-8859-1" http-equiv=Content-Type>   
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
   <title></title>
