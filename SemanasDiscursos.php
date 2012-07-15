@@ -43,7 +43,7 @@ function Respuesta($query)
     }
   
    
-    mysql_free_result($rows); 
+    mysql_free_result($result); 
     mysql_close($link); 
 }
 
