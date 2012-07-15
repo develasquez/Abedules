@@ -33,7 +33,7 @@ function Respuesta($query)
     }
     $json_response = '{"success":true, "data":' . json_encode($rows) . ', "errors":false }';
     print ($json_response) ;
-    mysql_free_result($rows); 
+    mysql_free_result($result); 
     mysql_close($link); 
 }
 

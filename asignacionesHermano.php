@@ -121,7 +121,7 @@ function Respuesta($query ,  $id_asignacion)
         
         }
    
-    mysql_free_result($rows); 
+    mysql_free_result($result); 
     mysql_close($link); 
 }
 $sala = $_GET["sala"];
