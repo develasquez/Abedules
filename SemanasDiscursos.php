@@ -24,7 +24,7 @@ $ano = $_GET["ano"];
 
 $query = "SELECT distinct  DATE_FORMAT(fecha,'%d/%m/%Y') as fechaMuestra,fecha  fecha FROM `asignaciones` ".
 "where fecha >= '".$ano."-".$mes."-01 00:00:00' ".
-"and fecha <= '".$ano."-".$mes."-31 00:00:00'";
+"and fecha <= '".$ano."-".$mes."-31 00:00:00'"."order by fecha asc";
 
 
 

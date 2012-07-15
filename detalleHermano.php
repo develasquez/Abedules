@@ -131,7 +131,6 @@ $id_grupo  = $_POST["id_grupo"];
     <div data-role="header" data-theme="b">
        <h1>Page Title</h1>
        
-       <input type="submit" value="Grabar" >
       </div>
       <div id="main" role="main" data-role="content" data-theme="b" >
       
