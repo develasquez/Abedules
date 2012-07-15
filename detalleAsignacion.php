@@ -38,12 +38,6 @@ $id_asignacion = $_GET["id"];
 $sala = $_GET['sala'];
 $id_hermano_p = $_GET['id_hermano_P'];
 $id_hermano_A = $_GET['id_hermano_A'];
-
-
-
-
-
-
 $tipoAsignacion = 0;
 
 $qTipoAsignacion = "select titulo, tipo_asignacion, fecha from asignaciones".
@@ -196,6 +190,7 @@ $participacion    = $_GET["participacion"];
 $leccion    = $_GET["leccion"];
 
 
+
 ?> 
 
 <!doctype html>
@@ -228,8 +223,8 @@ $leccion    = $_GET["leccion"];
     <div data-role="header" data-theme="b">
        <h1>Asigna Tema</h1>
        <a href="asignatema.php?id=<?= $id_asignacion; ?>" data-icon="gear" class="ui-btn-right">Siguiente</a>
-        <input type="submit" data-icon="gear" class="ui-btn-left">Asignaciones</a>
-      </div>
+       <a href="asignatema.php?id=<?= $id_asignacion; ?>" data-icon="gear" class="ui-btn-right">Siguiente</a>
+    </div>
       <div id="main" role="main" data-role="content" data-theme="b" >
       
     <div data-role="fieldcontain">
