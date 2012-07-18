@@ -92,12 +92,12 @@ $id_grupo  = $_POST["id_grupo"];
     
      $link=Conectarse(); 
     if($nombre != ""){
-    $update="update hermanos set".
+     $update="update hermanos set".
     ' nombre ="'. $_POST["nombre"].'"'.   
     ' ,apellido_paterno="'.$_POST["apellido_paterno"].'"'.
     ' ,apellido_materno="'.$_POST["apellido_materno"].'"'.
     ' ,apellido_casada"'.$_POST["apellido_casada"].'"'.
-    ' ,direccion"'.$POST["direccion"].'"'.
+    ' ,direccion"'.$_POST["direccion"].'"'.
     ' ,telefono="'.$_POST["telefono"].'"'.
     ' ,tipo_sexo='.$_POST["tipo_sexo"].
     ' ,tipo_privilegio='.$_POST["tipo_privilegio"].
@@ -105,8 +105,8 @@ $id_grupo  = $_POST["id_grupo"];
     ' ,activo='.$_POST["activo"].
     ' ,vigente='.$_POST["vigente"].
     ' ,participa='.$_POST["participa"].
-    ' ,id_grupo='.$_POST["id_grupo"].
-    ' where id= '.$_REQUEST["id"];
+    ' ,id_grupo='.$_POST["grupo"].
+    ' where id= '.$_REQUEST["id"].";";
     
     echo ($update);
     $result=mysql_query($update,$link); 
@@ -127,7 +127,7 @@ $id_grupo  = $_POST["id_grupo"];
     
     ?>
     <div id="container" data-role="page" data-theme="b" data-position="fixed">
-    <form action="graba.php"  method="post"  > 
+    <form action="detalleHermano.php"  method="post"  > 
     <div data-role="header" data-theme="b">
        <h1>Page Title</h1>
        
