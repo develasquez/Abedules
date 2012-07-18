@@ -1,4 +1,3 @@
-
 <?
 
 
@@ -7,7 +6,7 @@
 function Conectarse() 
 { 
    
-   if (!($link=mysql_connect("localhost","root","devenew1"))) 
+   if (!($link=mysql_connect("localhost","linode","devenew1"))) 
    { 
       echo '{"success":true, "data":[], "errors":"Error al conectar con la Base de Datos" }'; 
       exit(); 

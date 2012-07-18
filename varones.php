@@ -1,4 +1,3 @@
-
 <?
 
 
@@ -46,7 +45,7 @@ $query = "select ".
 "order by  ".
 "hermanos.nombre, ".
 "hermanos.apellido_paterno ";
-echo $query;
+
 
 ?> 
 

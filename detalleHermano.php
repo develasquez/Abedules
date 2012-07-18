@@ -251,7 +251,7 @@ $id_grupo  = $_POST["id_grupo"];
     </div>
     
     <?} ?>
-
+<input type="submit" value="Grabar">
     </div><!--content-->
     
 
