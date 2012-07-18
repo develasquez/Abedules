@@ -92,6 +92,7 @@ $id_grupo  = $_POST["grupo"];
     
      $link=Conectarse(); 
     if($nombre != ""){
+      echo "entro";
      $update="update hermanos set".
     ' nombre ="'. $_POST["nombre"].'"'.   
     ' ,apellido_paterno="'.$_POST["apellido_paterno"].'"'.
