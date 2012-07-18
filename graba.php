@@ -25,7 +25,7 @@ function Conectarse()
     ' ,apellido_paterno="'.$_GET["apellido_paterno"].'"'.
     ' ,apellido_materno="'.$_GET["apellido_materno"].'"'.
     ' ,apellido_casada"'.$_GET["apellido_casada"].'"'.
-    ' ,direccion"'.$POST["direccion"].'"'.
+    ' ,direccion"'.$_GET["direccion"].'"'.
     ' ,telefono="'.$_GET["telefono"].'"'.
     ' ,tipo_sexo='.$_GET["tipo_sexo"].
     ' ,tipo_privilegio='.$_GET["tipo_privilegio"].
