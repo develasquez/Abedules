@@ -34,7 +34,7 @@ function Conectarse()
     ' ,vigente='.$_GET["vigente"].
     ' ,participa='.$_GET["participa"].
     ' ,id_grupo='.$_GET["grupo"].
-    ' where id= '.$_REQUEST["id"];
+    ' where id= '.$_REQUEST["id"].";";
     
     echo ($update);
 
