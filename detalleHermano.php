@@ -131,7 +131,7 @@ echo $update;
     <form action="detalleHermano.php"  method="post"  > 
     <div data-role="header" data-theme="b">
       <a href="#" data-rel="back">Atras</a>
-       <h1>Page Title</h1>
+       <h3>Page Title</h3>
        
       </div>
       <div id="main" role="main" data-role="content" data-theme="b" >
