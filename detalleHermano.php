@@ -54,7 +54,7 @@ $nivel_escuela	= $_POST["nivel_escuela"];
 $activo	= $_POST["activo"];
 $vigente	= $_POST["vigente"];
 $participa	= $_POST["participa"];
-$id_grupo  = $_POST["id_grupo"];
+$id_grupo  = $_POST["grupo"];
 
 
 
