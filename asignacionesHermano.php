@@ -159,14 +159,15 @@ $leccion    = $_GET["leccion"];
   <form action="detalleAsignacion.php" method="GET">
   <div data-role="header" data-theme="b" data-position="inline">
   
-     <input type="hidden" name="id" id="id" value=<?= '"'.$id_asignacion.'"'; ?> />
+  <a href="#" data-rel="back">Atras</a>
+         <h1>Hermanos Disponibles</h1>
+         <input type="submit" data-icon="check" data-theme="b" class="ui-btn-right">Seleccionar</a>
+    </div>
+       <input type="hidden" name="id" id="id" value=<?= '"'.$id_asignacion.'"'; ?> />
      <input type="hidden" name="sala" id="sala" value=<?= '"'.$sala.'"'; ?> />
      <input type="hidden" name="participacion" id="participacion" value=<?= '"'.$participacion.'"'; ?> />
      <input type="hidden" name="leccion" id="leccion" value=<?= '"'.$leccion.'"'; ?> />
      
-         <h1>Hermanos Disponibles</h1>
-         <input type="submit" data-icon="check" data-theme="b" class="ui-btn-right">Seleccionar</a>
-    </div>
     <div id="main" role="main" data-role="content" data-theme="b" >
 
        

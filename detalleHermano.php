@@ -130,6 +130,7 @@ echo $update;
     <div id="container" data-role="page" data-theme="b" data-position="fixed">
     <form action="detalleHermano.php"  method="post"  > 
     <div data-role="header" data-theme="b">
+      <a href="#" data-rel="back">Atras</a>
        <h1>Page Title</h1>
        
       </div>

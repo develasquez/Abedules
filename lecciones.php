@@ -82,6 +82,7 @@ $query = " select l.id , l.leccion, aplica_a , max(fecha_realiza) as fecha_reali
 
   <div id="container" data-role="page" data-add-back-btn="true">
   <div data-role="header" data-theme="b">
+    <a href="#" data-rel="back">Atras</a>
      <center><h3>Hermanos y Hermanas</h3></center>
     </div>
     <div id="main" role="main" data-role="content" data-theme="b" >

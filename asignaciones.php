@@ -65,6 +65,7 @@ nivel_escuela asc*/
 
   <div id="container" data-role="page" data-add-back-btn="true">
   <div data-role="header" data-theme="b">
+    <a href="#" data-rel="back">Atras</a>
      <center><h3>Asignaciones</h3></center>
     </div>
    
