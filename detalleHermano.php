@@ -92,6 +92,7 @@ $id_grupo  = $_POST["grupo"];
     
      $link=Conectarse(); 
 
+
      $update="update hermanos set".
     ' nombre ="'. $_POST["nombre"].'"'.   
     ' ,apellido_paterno="'.$_POST["apellido_paterno"].'"'.
@@ -108,7 +109,7 @@ $id_grupo  = $_POST["grupo"];
     ' ,id_grupo='.$_POST["grupo"].
     ' where id= '.$_REQUEST["id"].";";
     
-
+echo $update;
     $result=mysql_query($update,$link); 
     
     
