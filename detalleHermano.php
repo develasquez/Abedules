@@ -127,7 +127,7 @@ $id_grupo  = $_POST["id_grupo"];
     
     ?>
     <div id="container" data-role="page" data-theme="b" data-position="fixed">
-    <form action="graba.php"  method="get"  > 
+    <form action="graba.php"  method="post"  > 
     <div data-role="header" data-theme="b">
        <h1>Page Title</h1>
        
