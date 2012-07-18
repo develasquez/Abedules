@@ -20,7 +20,7 @@ function Conectarse()
    return $link; 
 } 
 
-$id = $_GET["id"];
+$id = $_REQUEST["id"];
 
 $query = "SELECT ".
 "id ".
@@ -106,10 +106,10 @@ $id_grupo  = $_POST["id_grupo"];
     ' ,vigente='.$_POST["vigente"].
     ' ,participa='.$_POST["participa"].
     ' ,id_grupo='.$_POST["id_grupo"].
-    ' where id= '.$_POST["id"];
+    ' where id= '.$_REQUEST["id"];
     
     echo ($update);
-    //$result=mysql_query($update,$link); 
+    $result=mysql_query($update,$link); 
     
     
     }
