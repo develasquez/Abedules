@@ -49,6 +49,7 @@ function Respuesta($query)
 
 
 ?>
+
 <!doctype html>
 <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="es"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js ie7 oldie" lang="es"> <![endif]-->
@@ -56,6 +57,7 @@ function Respuesta($query)
 <!--[if gt IE 8]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
+    <meta content="text/html; charset=UTF-8" http-equiv=Content-Type>  
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
   <title></title>
@@ -70,6 +72,7 @@ function Respuesta($query)
   <!-- end CSS-->
 
   <script src="js/libs/modernizr-2.0.6.min.js"></script>
+   
 </head>
 
 <body>

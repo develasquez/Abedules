@@ -66,7 +66,7 @@ $id_grupo  = $_POST["grupo"];
 <!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 <head>
-    <meta content="text/html; charset=iso-8859-1" http-equiv=Content-Type>   
+<meta content="text/html; charset=UTF-8" http-equiv=Content-Type>  
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
   <title></title>
@@ -128,7 +128,11 @@ echo $update;
     
     ?>
     <div id="container" data-role="page" data-theme="b" data-position="fixed">
+<<<<<<< HEAD
     <form action="detalleHermano.php"  method="post"  > 
+=======
+    <form action="detalleHermano.php" > 
+>>>>>>> UTF-8
     <div data-role="header" data-theme="b">
       <a href="#" data-rel="back">Atras</a>
        <h3>Page Title</h3>
