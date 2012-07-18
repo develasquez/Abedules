@@ -200,7 +200,7 @@ $id_grupo  = $_POST["id_grupo"];
     
    
     <div data-role="fieldcontain">
-    <label for="select-choice-15">Activo:</label>
+    <label for="activo">Activo:</label>
     <select name="activo" id="activo" data-role="slider" disabled >
     	<option value=0>No</option>
     	<option value=1 <? echo $selectActivo ?>>Si</option>
@@ -215,7 +215,7 @@ $id_grupo  = $_POST["id_grupo"];
     ?>
     
     <div data-role="fieldcontain">
-    <label for="select-choice-15">Participa:</label>
+    <label for="participa">Participa:</label>
     <select name="participa" id="participa" data-role="slider" disabled >
     	<option value=0>No</option>
         <option value=1 <? echo $selectParticipa ?>>Si</option>
@@ -230,7 +230,7 @@ $id_grupo  = $_POST["id_grupo"];
     ?>
     
     <div data-role="fieldcontain">
-    <label for="select-choice-15">Vigente:</label>
+    <label for="vigente">Vigente:</label>
     <select name="vigente" id="vigente" data-role="slider" disabled >
     	<option value=0>No</option>
         <option value=1 <? echo $selectVigente ?>>Si</option>
@@ -239,8 +239,8 @@ $id_grupo  = $_POST["id_grupo"];
     
     
        <div data-role="fieldcontain">
-        <label for="select-choice-15">Grupo</label>
-    	<select name="select-choice-15" id="select-choice-15" data-theme="d" data-native-menu="false">
+        <label for="grupo">Grupo</label>
+    	<select name="grupo" id="grupo" data-theme="d" data-native-menu="false">
        <option value=1 <? if($grupo == "1" ){ echo "selected=selected "; } ?>>Grupo 1</option>
        <option value=2 <? if($grupo == "2" ){ echo "selected=selected "; } ?>>Grupo 2</option>
        <option value=3 <? if($grupo == "3" ){ echo "selected=selected "; } ?>>Grupo 3</option>
