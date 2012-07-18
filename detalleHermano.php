@@ -201,7 +201,7 @@ $id_grupo  = $_POST["id_grupo"];
    
     <div data-role="fieldcontain">
     <label for="activo">Activo:</label>
-    <select name="activo" id="activo" data-role="slider" disabled >
+    <select name="activo" id="activo" data-role="slider"  >
     	<option value=0>No</option>
     	<option value=1 <? echo $selectActivo ?>>Si</option>
     </select>
@@ -216,7 +216,7 @@ $id_grupo  = $_POST["id_grupo"];
     
     <div data-role="fieldcontain">
     <label for="participa">Participa:</label>
-    <select name="participa" id="participa" data-role="slider" disabled >
+    <select name="participa" id="participa" data-role="slider"  >
     	<option value=0>No</option>
         <option value=1 <? echo $selectParticipa ?>>Si</option>
     </select>
@@ -231,7 +231,7 @@ $id_grupo  = $_POST["id_grupo"];
     
     <div data-role="fieldcontain">
     <label for="vigente">Vigente:</label>
-    <select name="vigente" id="vigente" data-role="slider" disabled >
+    <select name="vigente" id="vigente" data-role="slider"  >
     	<option value=0>No</option>
         <option value=1 <? echo $selectVigente ?>>Si</option>
     </select>
