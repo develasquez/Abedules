@@ -218,7 +218,7 @@ $id_grupo  = $_POST["id_grupo"];
     <label for="participa">Participa:</label>
     <select name="participa" id="participa" data-role="slider"  >
     	<option value=0>No</option>
-        <option value=1 <? echo $selectParticipa ?>>Si</option>
+      <option value=1 <? echo $selectParticipa ?>>Si</option>
     </select>
     </div> 
       <?
