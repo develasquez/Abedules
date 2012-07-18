@@ -42,19 +42,19 @@ $query = "SELECT ".
 
 //Respuesta($query);
 
-$nombre = $_POST["nombre"];
-$apellido_paterno    = $_POST["apellido_paterno"];
-$apellido_materno	= $_POST["apellido_materno"];
-$apellido_casada	= $_POST["apellido_casada"];
-$direccion	= $_POST["direccion"];
-$telefono	= $_POST["telefono"];
-$tipo_sexo	= $_POST["tipo_sexo"];
-$tipo_privilegio	= $_POST["tipo_privilegio"];
-$nivel_escuela	= $_POST["nivel_escuela"];
-$activo	= $_POST["activo"];
-$vigente	= $_POST["vigente"];
-$participa	= $_POST["participa"];
-$id_grupo  = $_POST["grupo"];
+$nombre = $_GET["nombre"];
+$apellido_paterno    = $_GET["apellido_paterno"];
+$apellido_materno	= $_GET["apellido_materno"];
+$apellido_casada	= $_GET["apellido_casada"];
+$direccion	= $_GET["direccion"];
+$telefono	= $_GET["telefono"];
+$tipo_sexo	= $_GET["tipo_sexo"];
+$tipo_privilegio	= $_GET["tipo_privilegio"];
+$nivel_escuela	= $_GET["nivel_escuela"];
+$activo	= $_GET["activo"];
+$vigente	= $_GET["vigente"];
+$participa	= $_GET["participa"];
+$id_grupo  = $_GET["grupo"];
 
 
 
@@ -128,7 +128,7 @@ echo $update;
     
     ?>
     <div id="container" data-role="page" data-theme="b" data-position="fixed">
-    <form action="detalleHermano.php"  method="post"  > 
+    <form action="detalleHermano.php"  method="get"  > 
     <div data-role="header" data-theme="b">
        <h1>Page Title</h1>
        
