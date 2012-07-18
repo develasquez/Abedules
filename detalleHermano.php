@@ -97,8 +97,8 @@ $id_grupo  = $_GET["grupo"];
     ' nombre ="'. $nombre.'"'.   
     ' ,apellido_paterno="'.$apellido_paterno.'"'.
     ' ,apellido_materno="'.$apellido_materno.'"'.
-    ' ,apellido_casada"'.$apellido_casada.'"'.
-    ' ,direccion"'.$direccion.'"'.
+    ' ,apellido_casada="'.$apellido_casada.'"'.
+    ' ,direccion="'.$direccion.'"'.
     ' ,telefono="'.$telefono.'"'.
     ' ,tipo_sexo='.$tipo_sexo.
     ' ,tipo_privilegio='.$tipo_privilegio.
