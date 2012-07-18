@@ -131,8 +131,8 @@ function Respuesta($id_asignacion,$tipo_asignacion , $participacion)
              
              $result3=mysql_query($query3,$link); 
              
-              echo '<fieldset data-role="controlgroup">'.
-             '<legend>Seleccione un Mes</legend>';
+              echo '<fieldset data-role="controlgroup" data-filter="true">'.
+             '<legend>Selecciones</legend>';
              
               while($r3 = mysql_fetch_assoc($result3)) {
              
