@@ -133,7 +133,7 @@ $id_grupo  = $_POST["id_grupo"];
        
       </div>
       <div id="main" role="main" data-role="content" data-theme="b" >
-      
+      <input type="hidden" id="id" value=<?= '"'.$r['id'].'"'; ?> />
     <label for="nombre">Nombre:</label>
     <input type="text" name="nombre" id="nombre" value=<?= '"'.$r['nombre'].'"'; ?> />
     <label for="apellido_paterno">Apellido Paterno:</label>
