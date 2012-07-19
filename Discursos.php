@@ -1,6 +1,6 @@
 <?
 
-error_reporting(0);
+
 
 function Conectarse() 
 { 
@@ -133,7 +133,7 @@ function Asignados($sql)
 <br>
 <br>
 
-        <ul data-role="listview" data-inset="true" id ="Asignados" data-filter="true" >
+        <ul data-role="listview" data-inset="true" id ="Asignados"  >
     
         <li data-role="list-divider">Asignados</li>
 
