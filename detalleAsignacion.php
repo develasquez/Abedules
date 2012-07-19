@@ -213,16 +213,7 @@ $leccion    = $_GET["leccion"];
   <link rel="stylesheet" href="css/jquery.mobile-1.0rc1.min.css">
   <!-- end CSS-->
 
-  <script >
-$(function(){
 
-  $("li").click(function(){
-
-    alert($(this).attr("id"));
-
-  })
-})
-  </script>
 </head>
 
 <body>
@@ -331,18 +322,16 @@ $(function(){
   <!-- end scripts-->
 
 
-  <script> // Change UA-XXXXX-X to be your site's ID
-    window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
-    Modernizr.load({
-      load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
-    });
+    <script >
+$(function(){
+
+  $("li").click(function(){
+
+    alert($(this).attr("id"));
+
+  })
+})
   </script>
-
-
-  <!--[if lt IE 7 ]>
-    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
-    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
-  <![endif]-->
   
 </body>
 </html>
