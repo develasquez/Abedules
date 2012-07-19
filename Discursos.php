@@ -69,7 +69,7 @@ function Asignados($sql)
     while($r = mysql_fetch_assoc($result)) {
     
         
-       echo '<li id='.$r['id'] .'><a href="#">'
+       echo '<li id='.$r['hermano'] .'><a href="#">'
                                     .'<h3>'.$r['nombre'].' ' .$r['apellido_casada'].' '.$r['apellido_paterno'].  '</h3>'.
                                     '<center><p><strong>'.$r['texto'].'</strong></p></center>'.
                                     '<p class="ui-li-aside"><strong>'.$r['participacion'].'</strong></p>'.
