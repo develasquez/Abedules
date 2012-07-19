@@ -326,9 +326,8 @@ $leccion    = $_GET["leccion"];
 $(function(){
 
   $("li").click(function(){
-
-    alert($(this).attr("id"));
-
+    $("#leccion").val($(this).attr("id"));
+    
   })
 })
   </script>
