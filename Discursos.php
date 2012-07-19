@@ -39,6 +39,8 @@ $sql = "\n"
     . " where fecha='" .$fecha. "' "
     . " ";
 
+echo $sql;
+
 function Respuesta($query)
 {
   
