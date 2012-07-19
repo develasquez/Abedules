@@ -1,5 +1,6 @@
 
 <?
+error_reporting(0);
 
 function curPageURL() {
  $pageURL = 'http';
