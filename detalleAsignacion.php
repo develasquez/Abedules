@@ -224,7 +224,8 @@ $leccion    = $_GET["leccion"];
     <div data-role="header" data-theme="b">
       <a href="#" data-rel="back">Atras</a>
        <h3>Asigna Tema</h3>
-       <a href="asignatema.php?id=<?= $id_asignacion; ?>" data-icon="arrow-u" class="ui-btn-right">Siguiente</a>
+       <input type="submit" value="Siguiente" data-icon="arrow-r" class="ui-btn-right">
+       <!-- <a href="asignatema.php?id=" data-icon="arrow-r" class="ui-btn-right">Siguiente</a> -->
     
     </div>
       <div id="main" role="main" data-role="content" data-theme="b" >
