@@ -27,6 +27,17 @@ $query = "SELECT a.id,titulo, count(ia.tipo_sala) count FROM asignaciones a\n"
     . "order by tipo_asignacion\n"
     . "";
 
+
+$sql = "\n"
+    . "SELECT h.id hermano, nombre,apellido_casada, apellido_paterno, apellido_materno, ta.texto,ifnull( tp.texto,\'\') participacion, ah.leccion FROM hermanos h\n"
+    . " left join asignacion_hermanos ah on h.id = ah.id_hermano\n"
+    . " left join asignaciones a on a.id = ah.id_asignacion\n"
+    . "left join tipos_detalle ta on ta.codigo_tipo = a.tipo_asignacion and ta.id_tipo=3\n"
+    . "left join tipos_detalle tp on tp.codigo_tipo = ah.tipo_participacion and tp.id_tipo=4\n"
+    . "\n"
+    . " where fecha='" .$fecha. "' "
+    . " ";
+
 function Respuesta($query)
 {
   
@@ -45,6 +56,32 @@ function Respuesta($query)
     mysql_free_result($result); 
     mysql_close($link); 
 }
+
+function Asignados($sql)
+{
+  
+    
+ $link=Conectarse(); 
+    $result=mysql_query($sql,$link); 
+    $rows = array();
+  
+    while($r = mysql_fetch_assoc($result)) {
+    
+        
+       echo '<li id='.$r['id'] .'><a href="#">'
+                                    .'<h3>'.$r['nombre'].' ' .$r['apellido_casada '].' '.$r['apellido_paterno'].  '</h3>'.
+                                    '<center><p><strong>'.$r['texto'].'</strong></p></center>'.
+                                    '<p class="ui-li-aside"><strong>'.$r['participacion'].'</strong></p>'.
+                                    '<span class="ui-li-count">'.$r['leccion'].'</span>'.
+                                    "</a></li>";
+    }
+  
+   
+    mysql_free_result($result); 
+    mysql_close($link); 
+}
+
+
 
 
 ?>
@@ -87,6 +124,20 @@ function Respuesta($query)
 
         <?
         Respuesta($query);
+        ?>
+        
+        
+        </ul>
+
+<br>
+<br>
+
+        <ul data-role="listview" data-inset="true" id ="Asignados" data-filter="true" >
+    
+        <li data-role="list-divider">Asignados</li>
+
+        <?
+        Asignados($sql);
         ?>
         
         
