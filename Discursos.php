@@ -27,7 +27,7 @@ $query = "SELECT a.id,titulo, count(ia.tipo_sala) count FROM asignaciones a\n"
     . "group by a.id,titulo\n"
     . "order by tipo_asignacion\n"
     . "";
-
+echo $query;
 
 $sql = "\n"
     . "SELECT h.id hermano, nombre,apellido_casada, apellido_paterno, apellido_materno, ta.texto,ifnull( tp.texto,\'\') participacion, ah.leccion FROM hermanos h\n"
