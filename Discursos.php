@@ -30,7 +30,7 @@ $query = "SELECT a.id,titulo, count(ia.tipo_sala) count FROM asignaciones a\n"
 echo $query;
 
 $sql = "\n"
-    . "SELECT h.id hermano, nombre,apellido_casada, apellido_paterno, apellido_materno, ta.texto,ifnull( tp.texto,\'\') participacion, ah.leccion FROM hermanos h\n"
+    . "SELECT h.id hermano, nombre,apellido_casada, apellido_paterno, apellido_materno, ta.texto,ifnull( tp.texto,'') participacion, ah.leccion FROM hermanos h\n"
     . " left join asignacion_hermanos ah on h.id = ah.id_hermano\n"
     . " left join asignaciones a on a.id = ah.id_asignacion\n"
     . "left join tipos_detalle ta on ta.codigo_tipo = a.tipo_asignacion and ta.id_tipo=3\n"
