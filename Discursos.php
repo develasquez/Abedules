@@ -20,9 +20,12 @@ function Conectarse()
 $fecha = $_GET["fecha"];
 
 
-$query = "SELECT id,titulo FROM `asignaciones` ". 
-"where fecha='" .$fecha. "' ".
-"order  by tipo_asignacion";
+$query = "SELECT a.id,titulo, count(ia.tipo_sala) count FROM asignaciones a\n"
+    . "left join asignacion_hermanos ia on ia.id_asignacion= a.id\n"
+    . "where fecha='" .$fecha. "' "
+    . "group by a.id,titulo\n"
+    . "order by tipo_asignacion\n"
+    . "";
 
 function Respuesta($query)
 {
@@ -35,7 +38,7 @@ function Respuesta($query)
     while($r = mysql_fetch_assoc($result)) {
     
         
-       echo "<li id=".$r['id'] ."><a data-ajax=false href=detalleAsignacion.php?id=".$r['id'].">".$r['titulo']."</a></li>";
+       echo "<li id=".$r['id'] ."><a data-ajax=false href=detalleAsignacion.php?id=".$r['id'].">".$r['titulo']."<span class=ui-li-count>".$r['count']."</span></a></li>";
     }
   
    

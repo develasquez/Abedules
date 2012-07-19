@@ -219,7 +219,7 @@ $leccion    = $_GET["leccion"];
 
 <body>
 
-<form action="detalleAsignacion.php" method="POST">
+<form action="Discursos.php" method="POST">
     <div id="container" data-role="page" data-theme="b" data-position="fixed">
     <div data-role="header" data-theme="b">
       <a href="#" data-rel="back">Atras</a>
