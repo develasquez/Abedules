@@ -70,7 +70,7 @@ function Asignados($sql)
     
         
        echo '<li id='.$r['id'] .'><a href="#">'
-                                    .'<h3>'.$r['nombre'].' ' .$r['apellido_casada '].' '.$r['apellido_paterno'].  '</h3>'.
+                                    .'<h3>'.$r['nombre'].' ' .$r['apellido_casada'].' '.$r['apellido_paterno'].  '</h3>'.
                                     '<center><p><strong>'.$r['texto'].'</strong></p></center>'.
                                     '<p class="ui-li-aside"><strong>'.$r['participacion'].'</strong></p>'.
                                     '<span class="ui-li-count">'.$r['leccion'].'</span>'.
