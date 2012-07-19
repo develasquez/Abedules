@@ -213,7 +213,16 @@ $leccion    = $_GET["leccion"];
   <link rel="stylesheet" href="css/jquery.mobile-1.0rc1.min.css">
   <!-- end CSS-->
 
-  <script src="js/libs/modernizr-2.0.6.min.js"></script>
+  <script >
+$(function(){
+
+  $("li").click(function(){
+
+    alert($(this).attr("id"));
+
+  })
+})
+  </script>
 </head>
 
 <body>
@@ -223,8 +232,8 @@ $leccion    = $_GET["leccion"];
     <div data-role="header" data-theme="b">
       <a href="#" data-rel="back">Atras</a>
        <h3>Asigna Tema</h3>
-       <a href="asignatema.php?id=<?= $id_asignacion; ?>" data-icon="gear" class="ui-btn-right">Siguiente</a>
-       <a href="asignatema.php?id=<?= $id_asignacion; ?>" data-icon="gear" class="ui-btn-right">Siguiente</a>
+       <a href="asignatema.php?id=<?= $id_asignacion; ?>" data-icon="arrow-u" class="ui-btn-right">Siguiente</a>
+    
     </div>
       <div id="main" role="main" data-role="content" data-theme="b" >
       
