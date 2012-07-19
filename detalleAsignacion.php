@@ -219,19 +219,19 @@ $leccion    = $_GET["leccion"];
 
 <body>
 
-<form action="detalleAsignacion.php" method="GET">
+<form action="detalleAsignacion.php" method="POST">
     <div id="container" data-role="page" data-theme="b" data-position="fixed">
     <div data-role="header" data-theme="b">
       <a href="#" data-rel="back">Atras</a>
        <h3>Asigna Tema</h3>
-       <input type="submit" data-role="buton" value="Siguiente" data-icon="arrow-r" class="ui-btn-right">
+       
        <!-- <a href="asignatema.php?id=" data-icon="arrow-r" class="ui-btn-right">Siguiente</a> -->
     
     </div>
       <div id="main" role="main" data-role="content" data-theme="b" >
       
     <div data-role="fieldcontain">
-   
+   <input type="submit"  value="Siguiente" data-icon="arrow-r" >
     <label for="asignacion">Asignacion:</label>
   <input type="text" name="asignacion" id="asignacion" value=<?= '"'.$asignacion.'"'; ?> readonly/>
    
