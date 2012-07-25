@@ -86,7 +86,7 @@ function Asignados($sql)
 
 
 
-
+ 
 ?>
 <!doctype html>
 <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="es"> <![endif]-->
