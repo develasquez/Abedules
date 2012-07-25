@@ -263,9 +263,12 @@ $leccion    = $_GET["leccion"];
  <? } ?>                    
                     
                     
-                
-                        <label for="tipo_privilegio">Sala</label>
-                        <center><select name="tipo_sala" id="tipo_sala" data-theme="d" data-native-menu="false"></center>
+                 
+                        
+                 
+                    <div data-role="fieldcontain">
+              <label for="tipo_privilegio">Sala</label>
+                        <select name="tipo_sala" id="tipo_sala" data-theme="d" data-native-menu="false">
                         <? 
                         
                         $resultado=mysql_query($qSalasDisponibles,$link); 
@@ -282,10 +285,7 @@ $leccion    = $_GET["leccion"];
                             echo "<option value=".$res['codigo_tipo'] .$selected.">".$res['texto']."</option>";
                         }
                         ?>
-                    	</select>
-                 
-                    <div data-role="fieldcontain">
-              
+                      </select>
                         <label for="leccion">Leccion:</label>
                         <input type="tel" name="leccion" id="leccion" data-theme="d" value=<?= '"'.$leccion.'"'; ?> />
                             			
