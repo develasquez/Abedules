@@ -17,9 +17,39 @@ function Conectarse()
    } 
    return $link; 
 } 
-
+$asignacion = 0;
+$participacionA = 0;
 $fecha = $_GET["fecha"];
+$asignacion = $_POST["asignacion"];
+$participacionP = $_POST["id_hermano_P"];
+$participacionA = $_POST["id_hermano_A"];
+$tipo_sala =$_POST["tipo_sala"];
+$leccion =$_POST["leccion"];
 
+if ($asignacion != 0){
+
+  if ($tipo_sala == 1){
+
+    $tipo_participacionP = 1
+    $tipo_participacionA = 2
+  }else{
+    $tipo_participacionP = 3
+    $tipo_participacionA = 4
+  }
+$link=Conectarse();
+    $sqlP = "INSERT INTO `asignacion_hermanos`(`id_hermano`, `id_asignacion`, `tipo_sala`, `tipo_participacion`, `leccion`, `realizo`)"
+     . "VALUES (".$participacionP.",".$asignacion.",".$tipo_sala.",".$tipo_participacionP.",".$leccion.",0)";
+     
+    $result=mysql_query($sqlP,$link); 
+  
+  if ($participacionA !=0){
+        $sqlA = "INSERT INTO `asignacion_hermanos`(`id_hermano`, `id_asignacion`, `tipo_sala`, `tipo_participacion`, `leccion`, `realizo`)"
+     . "VALUES (".$participacionP.",".$asignacion.",".$tipo_sala.",".$tipo_participacionA.",".$leccion.",0)";
+     $result=mysql_query($sqlA,$link); 
+  
+  }
+  mysql_close($link); 
+}
 
 $query = "SELECT a.id,titulo, count(ia.tipo_sala) count FROM asignaciones a\n"
     . "left join asignacion_hermanos ia on ia.id_asignacion= a.id\n"
@@ -27,7 +57,6 @@ $query = "SELECT a.id,titulo, count(ia.tipo_sala) count FROM asignaciones a\n"
     . "group by a.id,titulo\n"
     . "order by tipo_asignacion\n"
     . "";
-echo $query;
 
 $sql = "\n"
     . "SELECT h.id hermano, nombre,apellido_casada, apellido_paterno, apellido_materno, ta.texto,ifnull( tp.texto,'') participacion, ah.leccion FROM hermanos h\n"
@@ -39,7 +68,7 @@ $sql = "\n"
     . " where fecha='" .$fecha. "' "
     . " ";
 
-echo $sql;
+
 
 function Respuesta($query)
 {

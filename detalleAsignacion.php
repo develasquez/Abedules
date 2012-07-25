@@ -140,7 +140,7 @@ function Respuesta($id_asignacion,$tipo_asignacion , $participacion)
              
                
              
-               echo '<input type="radio" name="id_hermano_"'.$participacion.' id="'.$r3['hermano'] .'" value="'.$r3['hermano'] .'"   data-theme="d"/>'.
+               echo '<input type="radio" name="id_hermano_'.$participacion.'" id="'.$r3['hermano'] .'" value="'.$r3['hermano'] .'"   data-theme="d"/>'.
                  '<label for="'.$r3['hermano'] .'">'. $r3['nombre']." ".
                  $r3['apellido_casada']." ".
                  $r3['apellido_paterno'].'      '. $r3['ultimo_tema'].' </label>';
@@ -263,7 +263,7 @@ $leccion    = $_GET["leccion"];
                     
                 
                         <label for="tipo_privilegio">Sala</label>
-                        <select name="tipo_privilegio" id="tipo_privilegio" data-theme="d" data-native-menu="false">
+                        <select name="tipo_sala" id="tipo_sala" data-theme="d" data-native-menu="false">
                         <? 
                         
                         $resultado=mysql_query($qSalasDisponibles,$link); 
