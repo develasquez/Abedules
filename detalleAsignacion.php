@@ -266,7 +266,7 @@ $leccion    = $_GET["leccion"];
                  
                         
                  
-                    <div data-role="fieldcontain">
+                 
               <label for="tipo_privilegio">Sala</label>
                         <select name="tipo_sala" id="tipo_sala" data-theme="d" data-native-menu="false">
                         <? 
@@ -304,7 +304,7 @@ $leccion    = $_GET["leccion"];
 
 
 
-                    </div>
+                  
  
   
   
