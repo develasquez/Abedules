@@ -30,11 +30,11 @@ if ($asignacion != 0){
 
   if ($tipo_sala == 1){
 
-    $tipo_participacionP = 1
-    $tipo_participacionA = 2
+    $tipo_participacionP = 1;
+    $tipo_participacionA = 2;
   }else{
-    $tipo_participacionP = 3
-    $tipo_participacionA = 4
+    $tipo_participacionP = 3;
+    $tipo_participacionA = 4;
   }
 $link=Conectarse();
     $sqlP = "INSERT INTO `asignacion_hermanos`(`id_hermano`, `id_asignacion`, `tipo_sala`, `tipo_participacion`, `leccion`, `realizo`)"
