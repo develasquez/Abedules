@@ -265,7 +265,7 @@ $leccion    = $_GET["leccion"];
                     
                  
                         
-                 
+                 <br>
                  
               <label for="tipo_privilegio">Sala</label>
                         <select name="tipo_sala" id="tipo_sala" data-theme="d" data-native-menu="false">
@@ -286,6 +286,7 @@ $leccion    = $_GET["leccion"];
                         }
                         ?>
                       </select>
+                      <br>
                         <label for="leccion">Leccion:</label>
                         <input type="tel" name="leccion" id="leccion" data-theme="d" value=<?= '"'.$leccion.'"'; ?> />
                             			
