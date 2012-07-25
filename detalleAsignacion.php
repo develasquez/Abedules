@@ -232,6 +232,7 @@ $leccion    = $_GET["leccion"];
       
     <div data-role="fieldcontain">
    <input type="submit"  value="Siguiente" data-icon="arrow-r" >
+   <input type="hidden" name="idAsignacion" id="idAsignacion" value=<?= $id_asignacion; ?> readonly/>
     <label for="asignacion">Asignacion:</label>
   <input type="text" name="asignacion" id="asignacion" value=<?= '"'.$asignacion.'"'; ?> readonly/>
    
