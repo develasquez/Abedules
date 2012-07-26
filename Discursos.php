@@ -81,7 +81,7 @@ function Respuesta($query,$fecha)
     while($r = mysql_fetch_assoc($result)) {
     
         
-       echo "<li id=".$r['id'] ."><a data-ajax=false href=detalleAsignacion.php?id=".$r['id']." fecha=".$fecha.">".$r['titulo']."<span class=ui-li-count>".$r['count']."</span></a></li>";
+       echo "<li id=".$r['id'] ."><a data-ajax=false href=detalleAsignacion.php?id=".$r['id']."&fecha=".$fecha.">".$r['titulo']."<span class=ui-li-count>".$r['count']."</span></a></li>";
     }
   
    
