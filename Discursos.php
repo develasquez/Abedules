@@ -39,12 +39,13 @@ if ($asignacion != 0){
 $link=Conectarse();
     $sqlP = "INSERT INTO `asignacion_hermanos`(`id_hermano`, `id_asignacion`, `tipo_sala`, `tipo_participacion`, `leccion`, `realizo`)"
      . "VALUES (".$participacionP.",".$asignacion.",".$tipo_sala.",".$tipo_participacionP.",".$leccion.",0)";
-     
+     echo $sqlP;
     $result=mysql_query($sqlP,$link); 
   
   if ($participacionA !=0){
         $sqlA = "INSERT INTO `asignacion_hermanos`(`id_hermano`, `id_asignacion`, `tipo_sala`, `tipo_participacion`, `leccion`, `realizo`)"
      . "VALUES (".$participacionP.",".$asignacion.",".$tipo_sala.",".$tipo_participacionA.",".$leccion.",0)";
+     echo $sqlA;
      $result=mysql_query($sqlA,$link); 
   
   }
