@@ -220,7 +220,7 @@ $leccion    = $_GET["leccion"];
 
 <body>
 
-<form action="Discursos.php?fecha=<?= $fecha ; ?>" method="POST">
+<form action="Discursos.php?fecha=<?= $fecha ; ?>" method="GET">
     <div id="container" data-role="page" data-theme="b" data-position="fixed">
     <div data-role="header" data-theme="b">
       <a href="#" data-rel="back">Atras</a>
