@@ -20,14 +20,14 @@ function Conectarse()
 $asignacion = 0;
 $participacionA = 0;
 $fecha = $_GET["fecha"];
-$asignacion = $_POST["asignacion"];
+$idAsignacion = $_POST["asignacion"];
 $participacionP = $_POST["id_hermano_P"];
 $participacionA = $_POST["id_hermano_A"];
 $tipo_sala =$_POST["tipo_sala"];
 $leccion =$_POST["leccion"];
 
-if ($asignacion != 0){
-
+if ($idAsignacion != 0){
+echo 1;
   if ($tipo_sala == 1){
 
     $tipo_participacionP = 1;
