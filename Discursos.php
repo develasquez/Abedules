@@ -17,6 +17,7 @@ function Conectarse()
    } 
    return $link; 
 } 
+echo 1;
 $asignacion = 0;
 $participacionA = 0;
 $fecha = $_GET["fecha"];

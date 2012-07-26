@@ -35,11 +35,11 @@ function Conectarse()
 $link=Conectarse(); 
  
  
-$id_asignacion = $_REQUEST["id"];
-$fecha = $_REQUEST["fecha"];
-$sala = $_REQUEST['sala'];
-$id_hermano_p = $_REQUEST['id_hermano_P'];
-$id_hermano_A = $_REQUEST['id_hermano_A'];
+$id_asignacion = $_POST["id"];
+$fecha = $_POST["fecha"];
+$sala = $_POST['sala'];
+$id_hermano_p = $_POST['id_hermano_P'];
+$id_hermano_A = $_POST['id_hermano_A'];
 $tipoAsignacion = 0;
 
 $qTipoAsignacion = "select titulo, tipo_asignacion, fecha from asignaciones".
