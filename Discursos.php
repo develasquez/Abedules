@@ -20,10 +20,6 @@ function Conectarse()
 $asignacion = 0;
 $participacionA = 0;
 $fecha = $_GET["fecha"];
-if (!$fecha){
-
-  $fecha = $_POST["fecha"];
-}
 $asignacion = $_POST["asignacion"];
 $participacionP = $_POST["id_hermano_P"];
 $participacionA = $_POST["id_hermano_A"];
@@ -74,7 +70,7 @@ $sql = "\n"
 
 
 
-function Respuesta($query)
+function Respuesta($query,$fecha)
 {
   
     
@@ -159,7 +155,7 @@ function Asignados($sql)
         <li data-role="list-divider">Asignaciones</li>
 
         <?
-        Respuesta($query);
+        Respuesta($query,$fecha);
         ?>
         
         
