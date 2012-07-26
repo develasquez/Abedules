@@ -35,10 +35,11 @@ function Conectarse()
 $link=Conectarse(); 
  
  
-$id_asignacion = $_GET["id"];
-$sala = $_GET['sala'];
-$id_hermano_p = $_GET['id_hermano_P'];
-$id_hermano_A = $_GET['id_hermano_A'];
+$id_asignacion = $_REQUEST["id"];
+$fecha = $_REQUEST["fecha"];
+$sala = $_REQUEST['sala'];
+$id_hermano_p = $_REQUEST['id_hermano_P'];
+$id_hermano_A = $_REQUEST['id_hermano_A'];
 $tipoAsignacion = 0;
 
 $qTipoAsignacion = "select titulo, tipo_asignacion, fecha from asignaciones".
@@ -232,7 +233,7 @@ $leccion    = $_GET["leccion"];
       
     <div data-role="fieldcontain">
    <input type="submit"  value="Siguiente" data-icon="arrow-r" >
-   <label for="idAsignacion"></label>
+   <input type="hidden" name="fecha" id="fecha" value=<?= $fecha ; ?> readonly/>
    <input type="hidden" name="idAsignacion" id="idAsignacion" value=<?= $id_asignacion; ?> readonly/>
     <label for="asignacion">Asignacion:</label>
   <input type="text" name="asignacion" id="asignacion" value=<?= '"'.$asignacion.'"'; ?> readonly/>
@@ -302,11 +303,8 @@ $leccion    = $_GET["leccion"];
 </div>
 
     </div><!-- collapsible -->   
-
-
-
                   
- 
+
   
   
     </div><!--content-->

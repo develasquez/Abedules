@@ -19,7 +19,7 @@ function Conectarse()
 } 
 $asignacion = 0;
 $participacionA = 0;
-$fecha = $_GET["fecha"];
+$fecha = $_REQUEST["fecha"];
 $asignacion = $_POST["asignacion"];
 $participacionP = $_POST["id_hermano_P"];
 $participacionA = $_POST["id_hermano_A"];
@@ -81,7 +81,7 @@ function Respuesta($query)
     while($r = mysql_fetch_assoc($result)) {
     
         
-       echo "<li id=".$r['id'] ."><a data-ajax=false href=detalleAsignacion.php?id=".$r['id'].">".$r['titulo']."<span class=ui-li-count>".$r['count']."</span></a></li>";
+       echo "<li id=".$r['id'] ."><a data-ajax=false href=detalleAsignacion.php?id=".$r['id']." fecha=".$fecha.">".$r['titulo']."<span class=ui-li-count>".$r['count']."</span></a></li>";
     }
   
    
@@ -149,7 +149,7 @@ function Asignados($sql)
     </div>
     <div id="main" role="main" data-role="content" data-theme="b" >
 
-       
+
         <ul data-role="listview" data-inset="true" id ="menu" data-filter="true" >
     
         <li data-role="list-divider">Asignaciones</li>
