@@ -19,7 +19,11 @@ function Conectarse()
 } 
 $asignacion = 0;
 $participacionA = 0;
-$fecha = $_REQUEST["fecha"];
+$fecha = $_GET["fecha"];
+if (!$fecha){
+
+  $fecha = $_POST["fecha"];
+}
 $asignacion = $_POST["asignacion"];
 $participacionP = $_POST["id_hermano_P"];
 $participacionA = $_POST["id_hermano_A"];
