@@ -220,7 +220,7 @@ $leccion    = $_GET["leccion"];
 
 <body>
 
-<form action="Discursos.php" method="POST">
+<form action="Discursos.php?fecha=<?= $fecha ; ?>" method="POST">
     <div id="container" data-role="page" data-theme="b" data-position="fixed">
     <div data-role="header" data-theme="b">
       <a href="#" data-rel="back">Atras</a>
@@ -233,7 +233,7 @@ $leccion    = $_GET["leccion"];
       
     <div data-role="fieldcontain">
    <input type="submit"  value="Siguiente" data-icon="arrow-r" >
-   <input type="hidden" name="fecha" id="fecha" value=<?= $fecha ; ?> readonly/>
+  
    <input type="hidden" name="idAsignacion" id="idAsignacion" value=<?= $id_asignacion; ?> readonly/>
     <label for="asignacion">Asignacion:</label>
   <input type="text" name="asignacion" id="asignacion" value=<?= '"'.$asignacion.'"'; ?> readonly/>
